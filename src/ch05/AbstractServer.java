@@ -23,6 +23,7 @@ public abstract class AbstractServer {
 	public String message;
 	protected NateOn nate;
 	private Scanner scanner;
+	
 	// set 메서드
 	// 메서드 의존 주입(멤버 변수에 참조 변수 할당)
 	protected void setServerSocket(ServerSocket serverSocket) {

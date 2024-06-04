@@ -49,10 +49,11 @@ public class NateOn extends JFrame{
 		keyboardReader = new BufferedReader(new InputStreamReader(System.in));
 		background = new JLabel(new ImageIcon("images/kakao.png"));
 		setContentPane(background);
-		setSize(500,800);
+		setSize(500,840);
 		setTitle("카카오톡");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		textfield = new JTextField();
+		textfield.setBorder(null);
 		textarea = new JTextArea();
 		jp = new JPanel();
 		textfield.addActionListener(new ActionListener() {
@@ -73,10 +74,10 @@ public class NateOn extends JFrame{
 		add(textfield);
 		add(textarea);
 		textarea.setEditable(false);
-		textarea.setSize(400,500);
+		textarea.setSize(400,620);
 		textarea.setLocation(40, 100);
 		textfield.setSize(400,40);
-		textfield.setLocation(40, 720);
+		textfield.setLocation(40, 750);
 	}
 	
 	public static void main(String[] args) {
